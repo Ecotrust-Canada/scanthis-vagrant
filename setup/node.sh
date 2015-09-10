@@ -10,8 +10,8 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | 
 . /home/vagrant/.nvm/nvm.sh
 
 # nvm install
-nvm install 0.11
-nvm alias default 0.11
+nvm install 4.0.0
+nvm alias default 4.0.0
 
 # use new node version
 nvm use default
@@ -22,3 +22,6 @@ cat /vagrant/files/.bashrc >> /home/vagrant/.bashrc
 # install npm
 cd /opt/scanthis/
 npm install
+
+# install global npm dependencies
+npm install -g nodemon
