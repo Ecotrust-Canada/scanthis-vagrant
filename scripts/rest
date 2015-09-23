@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo postgrest --db-host localhost --db-port 5432 --db-name scanthis --db-user tuna_processor --db-pass scanthis --db-pool 200 --anonymous tuna_processor --port 3000 --v1schema public

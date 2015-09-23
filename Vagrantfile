@@ -25,5 +25,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, path: "setup/os.sh"
   config.vm.provision :shell, path: "setup/dep.sh"
   config.vm.provision :shell, path: "setup/postgres.sh"
+  config.vm.provision :shell, path: "setup/postgrest.sh"
   config.vm.provision :shell, path: "setup/node.sh", privileged: false
 end
